@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Focus</title>
+</head>
+<style>
+    /* Hier zijn de styles voor je button */
+    .outline {
+        border: 2px solid red;
+    }
+</style>
+
+<body>
+    <input id="search-input" type="text">
+    <button id="search-button" type="button">click</button>
+
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const searchButton = document.getElementById('search-button');
+
+        // voeg een nieuwe class toe aan je button zodat de styling van die class zichtbaar wordt.
+        searchInput.addEventListener("focus", () => searchButton.classList.add('outline'));
+    </script>
+</body>
+
+</html>
